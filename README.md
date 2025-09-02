@@ -16,21 +16,17 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Progress So Far
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Initialized the project using `create-next-app`.
+- Initialized next-auth [`npm install next-auth@beta`=>`npx auth secret` ]
+- created auth.js file and added handlers for auth login[github]
+- created OAuth in github account and stored github id and secret in env
+- created root group and moved page.tsx into it and created a new layout.tsx
+- created /app/api/auth/[...nextauth]/route.ts. 
+- created Navbar and used SignIn and Signout with form trigerring server action for signin and out
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+<!-- Styling and tailwind configuration -->
+- Took config code from git(tailwind v3) and applied to global.css(tailwind v4 - our project)
+-  installed these and imported into global.css @plugin "@tailwindcss/typography"; @import "tw-animate-css";
+- Downloaded fonts and added to app, made changes to the layout.tsx for fonts and defined root fonts
