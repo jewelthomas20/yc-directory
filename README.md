@@ -30,3 +30,23 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - Took config code from git(tailwind v3) and applied to global.css(tailwind v4 - our project)
 -  installed these and imported into global.css @plugin "@tailwindcss/typography"; @import "tw-animate-css";
 - Downloaded fonts and added to app, made changes to the layout.tsx for fonts and defined root fonts
+
+
+- setted up sanity schema inside schemaTypes and added to index.ts[schematypes]
+- npm install sanity-plugin-markdown for schema defination, markdownSchema() inside sanity.config.ts           
+- updated the structutre.ts inside sanity 
+- npx sanity@latest schema extract --path=./sanity/extract.json// ran this to get sample of current schema
+
+<!-- Fetching and type check -->
+
+- created queries.ts inside sanity>lib which uses sanity GROQ queries 
+- updated fetch in root/page.tsx to fetch live data
+- updated scripts in package.json so that types could be generated for schema which will be used for typecheck for queries from frontend.
+- updated type checks needed in certain comps
+
+<!-- Live fetch -->
+
+- npm i server-only// to run specific flow on the server only
+- used sanity live api to fetch data on upload of new
+- created live.ts file and updated root/page.tsx
+

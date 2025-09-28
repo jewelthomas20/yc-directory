@@ -13,3 +13,10 @@ export function formatDate(date:string){
     year: 'numeric',
   })
 }
+
+
+export function viewCheck (views:number){
+  if(views === 1) return '1 View'
+  if(views > 1) return `${views} Views`
+  return 'No Views'
+}
