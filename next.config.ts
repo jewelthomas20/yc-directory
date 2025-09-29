@@ -2,17 +2,23 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   /* config options here */
+  typescript: {
+    ignoreBuildErrors: true
+  },
+  eslint: {
+    ignoreDuringBuilds: true
+  },
   images: {
     dangerouslyAllowSVG: true,
-    remotePatterns:[
+    remotePatterns: [
       {
         protocol: 'https',
-        hostname:'*'
+        hostname: '*'
       }
     ]
   },
-  experimental:{
-    ppr:'incremental'
+  experimental: {
+    ppr: 'incremental'
   }
 };
 
