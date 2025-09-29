@@ -22,8 +22,6 @@
     "@sanity/image-url": "^1.2.0",
     "@sanity/vision": "^4.6.1",
     "@tailwindcss/typography": "^0.5.16",
-    "@tailwindcss/postcss": "^4.1.13",
-    "tailwindcss": "^4",
     "@uiw/react-md-editor": "^4.0.8",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
@@ -46,12 +44,14 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4.1.13",
     "@types/markdown-it": "^14.1.2",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "^15.6.0-canary.22",
+    "tailwindcss": "^4",
     "tw-animate-css": "^1.3.7",
     "typescript": "^5"
   }
