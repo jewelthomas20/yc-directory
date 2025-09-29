@@ -20,3 +20,7 @@ export function viewCheck (views:number){
   if(views > 1) return `${views} Views`
   return 'No Views'
 }
+
+export function parseServerActionResponse<T>(response: T) {
+  return JSON.parse(JSON.stringify(response));
+}

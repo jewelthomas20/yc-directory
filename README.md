@@ -50,3 +50,10 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - used sanity live api to fetch data on upload of new
 - created live.ts file and updated root/page.tsx
 
+
+<!--Partial pre-render and startup page  -->
+
+- due to package issue ran npm command taki baki packages use kr ske
+- created a new api from sanity dashboard with editor access and stored the api in .env
+- created write-client.ts which will be used to write into sanity db
+- used supense tag in startup page to implement view comp which is dynamic and implement view counts
